@@ -13,9 +13,9 @@ shinyUI(fluidPage(
   titlePanel("Choropleth for which indicator and time frame"),
 
   selectInput("indicator", label = h3("Indicator"), 
-              choices = list("Child Mortality (under 5 per 1000 live births)" = "SH.DYN.MORT", "Income share held by highest 10%" = "SI.DST.10TH.10", 
-                             "Sex ratio at birth (males per 1000 females)" = "SP.POP.BRTH.MF"), 
-              selected = "SP.POP.BRTH.MF"),
+              choices = list("School enrollment, primary (% net)" = "SE.PRM.NENR", "School enrollment, secondary (% net)" = "SE.SEC.NENR", 
+                             "School enrollment, tertiary (% gross)" = "SE.TER.ENRR"), 
+              selected = "SE.TER.ENRR"),
   sliderInput("Year", "Data from years:", 
               min=1980, max=2012, value=2010,  step=1,
               format="###0",animate=FALSE),

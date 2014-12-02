@@ -14,3 +14,4 @@ shinyServer(function(input, output) {
     
 
 })})
+runApp(WDIshiny)
